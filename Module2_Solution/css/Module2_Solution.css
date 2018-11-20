@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive, sans-serif;
+    color: #354C51;
+    background-color: #C7D6D5;
+}
+
+#hdr > h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+section, h3 {
+    border: 1px solid black;
+    
+}
+
+section {
+    float: left;
+    position: relative;
+    margin: 1%;
+    color: #C7D6D5;
+    background-color: #354C51;
+}
+
+h3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 5px;
+}
+
+/* special backgrounds for section titles */ 
+#sc1 > h3 { background-color: #80A1C1; }
+#sc2 > h3 { background-color: #FF8484; }
+#sc3 > h3 { background-color: #4DCCBD; }
+
+p{ background-color: #354C51; color: #C7D6D5;
+  margin: 40px 10px 10px; } /* paragraph spaces */
+
+/* Window */
+@media (min-width: 992px) {
+    section { width: 31.33%; } /* after subtaracting the margin value */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    section { width: 48%; } /* after subtaracting the margin value */
+    #sc3 { width: 98%; } /* overlapping the above property to take the entire row */
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    section { width: 98%; } /* after subtaracting the margin value */
+}
